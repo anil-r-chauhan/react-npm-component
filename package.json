@@ -1,45 +1,40 @@
 {
   "name": "custom-select-component",
-  "version": "1.0.9",
+  "version": "1.4.2",
   "description": "react library",
-  "main": "dist/index.cjs.js",
-  "scripts": {
-    "build": "rollup -c"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.20.13",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@material-ui/core": "^4.12.4",
-    "@mui/material": "^5.11.8"
-  },
-  "keywords": [
-    "react",
-    "keywords"
+  "main": "dist/index.js",
+  "files": [
+    "dist"
   ],
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anil-r-chauhan/react-npm-component.git"
+  },
   "author": "anil",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anil-r-chauhan/react-npm-component/issues"
+  },
+  "homepage": "https://github.com/anil-r-chauhan/react-npm-component#readme",
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-transform-runtime": "^7.19.6",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@types/react": "^18.0.27",
-    "autoprefixer": "^10.4.13",
-    "react": "^18.2.0",
-    "rollup": "^3.15.0",
-    "rollup-plugin-dts": "^5.1.1",
-    "rollup-plugin-sourcemaps": "^0.6.3",
-    "rollup-plugin-styles": "^4.0.0",
-    "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "@babel/core": "7.20.12",
+    "@babel/preset-env": "7.20.2",
+    "babel-loader": "9.1.2",
+    "css-loader": "6.7.3",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "ts-loader": "9.4.2",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.1"
+  },
+  "dependencies": {
+    "@babel/preset-react": "7.18.6",
+    "jsx-runtime": "1.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
